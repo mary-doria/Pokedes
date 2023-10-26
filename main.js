@@ -78,12 +78,12 @@ async function loadPokemonData(pokemonName) {
         `
             <h2>${data.name.toUpperCase()}</h2>
             <img src="${data.sprites.front_default}" alt="${data.name}">
-            <p>Número: ${data.id}</p>
-            <p>Altura: ${data.height / 10}m</p>
-            <p>Peso: ${data.weight / 10}kg</p>
-            <p>Descripción: ${speciesData.flavor_text_entries[0].flavor_text}</p>
-            <p>Habilidades: ${data.abilities.map(ability => ability.ability.name).join(', ')}</p>
-            <p>Movimientos: ${data.moves.slice(0, 5).map(move => move.move.name).join(', ')}</p>
+            <p>Number: ${data.id}</p>
+            <p>Height: ${data.height / 10}m</p>
+            <p>Weight: ${data.weight / 10}kg</p>
+            <p>Description: ${speciesData.flavor_text_entries[0].flavor_text}</p>
+            <p>Skills: ${data.abilities.map(ability => ability.ability.name).join(', ')}</p>
+            <p>Movements: ${data.moves.slice(0, 5).map(move => move.move.name).join(', ')}</p>
             ${evolvesTo ? `<button id="evolveBtn">Evolucionar a ${evolvesTo.species.name.toUpperCase()}</button>` : ''}
         `;
 
