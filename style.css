@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+    background-color: grey;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    font-size: 1em;
+    border: 3px solid yellow;
+    padding: 12px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+
+.pokedex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    max-width: 800px; 
+    background-color: #333;
+    border-radius: 10px 10px 10px 10px; 
+
+}
+
+.pokedex-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.pokedex-container img {
+    max-width: 80%;
+    height: auto;
+   
+}
+
+.pokedex-container p {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+
+}
+
+
+.pokemon-card {
+    max-width: 18rem;
+    margin: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+
+.pokemon-card img {
+    width: 70%;
+    height: auto;
+    border: 3px solid grey; 
+    border-radius: 10px 10px 10px 10px;
+    margin: 0 auto; 
+    margin-bottom: 6px;
+}
+
+
+
+
+.pokemon-card .card-body {
+    text-align: center;
+    border: 3px solid yellow;
+    border-radius: 10px 10px 10px 10px;
+  
+}
+
+
+.pokemon-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    
+}
+
+
+.pokemon-card .card-text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px; 
+    margin-bottom: 10px;
+    
+}
+
+
+.pokemon-card .evolve-button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
