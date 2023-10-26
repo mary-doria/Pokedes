@@ -69,3 +69,10 @@ document.querySelector('button').addEventListener('click', () => {
     const searchedPokemon = searchInput.value.toLowerCase();
     loadPokemonData(searchedPokemon);
 });
+
+function clearSearchInput() {
+    searchInput.value = '';
+}
+
+const clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', clearSearchInput);
