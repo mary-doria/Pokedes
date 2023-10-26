@@ -73,6 +73,5 @@ document.querySelector('button').addEventListener('click', () => {
 function clearSearchInput() {
     searchInput.value = '';
 }
-
 const clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', clearSearchInput);
